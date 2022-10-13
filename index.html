@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice_clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tabsPanel">
+        <!-- Tab menyusi -->
+        <ul class="tabsLinks">
+            <li class="tabsItem active"><a href="#" class="tabsLink">Clock</a></li>
+            <li class="tabsItem">
+                <a href="#" class="tabsLink">Stopwatch
+                    <!-- span sekundomerning boshlanishini ko'rsatish
+                    Ish mashg'ulotlarida qatnashadi:
+                    active - Sekundomer ishlamoqda
+                    active_clear - Sekundomer to'xtadi, ammo ma'lumotlar qayta tiklanmadi
+                    -->
+                    <span class="tabsLink__span"></span>
+                </a>
+            </li>
+        </ul>
+        <!-- Barcha yorliqlar -->
+        <div class="tabsContent">
+            <!-- Digital Clock -->
+            <div class="clock tabsContentItem active">
+                <div class="arrowClock">
+                    <!-- Clock -->
+                    <div class="arrowClockNumber">
+                        <div class="arrowClockNumber__num arrowClockNumber__num_12">12</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_1"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_2"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_3">3</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_4"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_5"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_6">6</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_7"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_8"></div>
+                        <div class="arrowClockNumber__num arrowClockNumber__num_9">9</div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_10"></div>
+                        <div class="arrowClockNumber__arr arrowClockNumber__arr_11"></div>
+                    </div>
+
+                    <!-- Arrows  -->
+
+                    <div class="s"></div>
+                    <!-- Arrows -->
+                    <div class="m"></div>
+                    <!-- Minute -->
+                    <div class="h"></div>
+                    <!-- Hourly -->
+                </div>
+                <div class="numberClock">
+                    <!-- Vaqtning chiqishi raqamlarda -->
+                    <div class="hours">00</div>
+                    <div class="minutes">00</div>
+                </div>
+            </div>
+            <!-- Sekundomer D / Z -->
+            <!-- 
+
+            Vazifa:
+               
+                     Rekursiya va shartlardan foydalanib, ishlatmasdan ishlaydigan sekundomerni yarating new Date()    
+
+             -->
+            <div class="stopwatch tabsContentItem ">
+                <div class="stopwatch__clock">
+
+                    <div class="stopwatch__clock-description">
+                        <!-- Hour -->
+                        <div class="stopwatch__hours">0</div>
+                        Hour.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Menutes -->
+                        <div class="stopwatch__minutes">0</div>
+                        Min.
+                    </div>
+                    <div class="stopwatch__clock-description">
+                        <!-- Secunds -->
+                        <div class="stopwatch__seconds">0</div>
+                        Sec.
+                    </div>
+                </div>
+                <!-- Sekundomerni boshlash tugmasi -->
+                <button class="stopwatch__btn">start</button>
+            </div>
+        </div>
+    </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
